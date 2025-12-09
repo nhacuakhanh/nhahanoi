@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quản lý tầng</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="header">
+  <div class="header-title">Quản lý tầng</div>
+  <div class="header-menu" onclick="backPage()">Quay lại</div>
+</div>
+
+<div class="page">
+
+  <div class="card">
+      <label class="label">Nhập số tầng</label>
+      <input type="number" id="floorCount" class="input">
+      <button class="btn-primary" onclick="createFloors()">Tạo tầng</button>
+  </div>
+
+  <h3 class="section-title">Danh sách tầng</h3>
+  <ul id="floorList" class="list"></ul>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/tang.js"></script>
+
+</body>
+</html>
